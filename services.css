@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{font-size: 11em;}
+h3{font-size: 2.5em;}
+p{font-size: 2em;}
+.acent-color{ color: #FF4B57; font-weight: 600;}
+.acento{ color: #FF4B57;}
+
+.button-home {
+    width: 10em;
+    position: relative;
+    height: 3.5em;
+    border: 3px ridge #FF4B57;
+    outline: none;
+    background-color: transparent;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+  
+.button-home::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #23253a;
+    transition: 0.5s;
+    transform-origin: center;
+}
+  
+.button-home::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #23253a;
+    transition: 0.5s;
+}
+  
+.button-home:hover::before, 
+.button-home:hover::after {
+    transform: scale(0);
+}
+  
+.button-home:hover {
+    box-shadow: inset 0px 0px 25px #FF4B57;
+}
+
+.header{
+    text-align: center;
+    background-color: #23253a;
+}
+
+.header .nav-bar ul{
+    display: flex;
+    justify-content: center;
+    font-size: 1.8em;
+    font-weight: 600;
+    padding: 40px;
+    gap: 50px;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+li a:hover{
+    color: #FF4B57;
+}
+
+.main-section h1{
+    justify-content: center;
+    text-align: center;
+    margin: 150px;
+    background-color: #23253a;
+    border-radius: 50px;
+    color: white;
+
+}
+
+#tittle-services{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 100px;
+    background-color: #23253a;
+}
+
+.container-tittle-services{
+    justify-content: center;
+    text-align: center;
+    padding: 25px 250px;
+}
+
+.container-tittle-services h3{
+    font-size: 3em;
+    font-weight: 700;
+    padding: 30px;
+    border-radius: 80px;
+    color: white;
+}
+
+#services{
+    display: flex;
+    justify-content: space-around;
+    padding: 150px 0px;
+}
+
+.container-services p{
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+
+.container-services{
+    display: flex;
+    gap: 150px;
+}
+
+.card {
+    width: 290px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #23253a;
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 1;
+   }
+   
+   .tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+   }
+   
+   .circle {
+    padding: 0 4px;
+   }
+   
+   .box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+   }
+   
+   .red {
+    background-color: #FF4B57;
+   }
+   
+   .yellow {
+    background-color: #ffbd44;
+   }
+   
+   .green {
+    background-color: #00ca4e;
+   }
+   
+
+
+#container-tittle-tecnology{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 50px;
+
+}
+
+.container-tittle-tecnology{
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0px 250px;
+    background-color: #23253a;
+    color: white;
+    padding: 50px;
+    border-radius: 100px;
+}
+
+.footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color:  grey;
+    margin: auto;
+    padding: 10px;
+}
+
+.footer p{
+    font-size: 0.8em;
+}
+
